@@ -63,7 +63,7 @@ class Input:
     def __init__(self, label, data):
         self.label = label
         self.data = numpy.where(data == 0, -1, data)
-        self.origin = normalize(data)
+        self.origin = data 
         self.results = {}
 
     def fit(self, model):
